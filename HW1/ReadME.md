@@ -7,9 +7,10 @@ It has also been used is different other scenarios, for instance: detecting web 
 uncovering the hidden thematic structure in the World Wide Web (connected regions of the web which are dense in triangles represents a common topic), 
 query plan optimization in databases (triangle counting can be used for estimating the size of some joins). 
 Both algorithms use an integer parameter $C \geq 1$, which is used to partition the data.
+![output_4_1](https://github.com/Ska-p/Big-Data-Computing/assets/102731992/8b1b9479-2e86-41aa-8634-98bcc7340dc8)
 
 <p align="center">
-  <img width="460" height="300" src="![image](https://github.com/Ska-p/Big-Data-Computing/assets/102731992/81195ca2-c5da-441e-88b1-ef4491f5da50)">
+  <img src="![image](https://github.com/Ska-p/Big-Data-Computing/assets/102731992/81195ca2-c5da-441e-88b1-ef4491f5da50)">
 </p>
 
 ### ALGORITHM 1: 
