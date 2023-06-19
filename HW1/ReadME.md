@@ -9,9 +9,9 @@ query plan optimization in databases (triangle counting can be used for estimati
 Both algorithms use an integer parameter $C \geq 1$, which is used to partition the data.
 
 <p align="center">
-![image](https://github.com/Ska-p/Big-Data-Computing/assets/102731992/505492fe-3516-4e62-92b1-510b7093d2a7)
+  <img width="460" height="300" src="[https://picsum.photos/460/300](https://github.com/Ska-p/Big-Data-Computing/assets/102731992/505492fe-3516-4e62-92b1-510b7093d2a7)">
 </p>
-  
+
 ### ALGORITHM 1: 
 Define a hash function $h_C$ which maps each vertex $u$ in $V$ into a color $h_C(u)$ in $[0,C−1]$. To this purpose, we advise you to use the hash function $h_C(u)=((a⋅u+b)mod\:p)mod\:C$
 where $p=8191$ (which is prime), a is a random integer in $[1,p−1]$, and b is a random integer in $[0,p−1]$.
