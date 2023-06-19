@@ -14,12 +14,13 @@ The threshold 10M will be hardcoded as a constant in the program.
 ## TASK for HW3.
 You must write a program which receives in input the following 6 command-line arguments (in the given order):
 
-An integer $D$: the number of rows of the count sketch
-An integer $W$: the number of columns of the count sketch
-An integer $left$: the left endpoint of the interval of interest
-An integer $right$: the right endpoint of the interval of interest
-An integer $K$: the number of top frequent items of interest
-An integer $portExp$: the port number
++ An integer $D$: the number of rows of the count sketch
++ An integer $W$: the number of columns of the count sketch
++ An integer $left$: the left endpoint of the interval of interest
++ An integer $right$: the right endpoint of the interval of interest
++ An integer $K$: the number of top frequent items of interest
++ An integer $portExp$: the port number
+  
 The program must read the first (approximately) 10M items of the stream $\Sigma$ generated from machine **algo.dei.unipd.it** at port $portExp$ and compute the following statistics. 
 
 Let $R$ denote the interval $\[left,right\]$ and let $\Sigma_R$ be the substream consisting of all items of $\Sigma$ belonging to $R$. The program must compute: 
