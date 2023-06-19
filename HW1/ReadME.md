@@ -7,11 +7,9 @@ It has also been used is different other scenarios, for instance: detecting web 
 uncovering the hidden thematic structure in the World Wide Web (connected regions of the web which are dense in triangles represents a common topic), 
 query plan optimization in databases (triangle counting can be used for estimating the size of some joins). 
 Both algorithms use an integer parameter $C \geq 1$, which is used to partition the data.
-
 <p align="center">
-  <img width="460" height="300" src="https://picsum.photos/460/300">
+  <img src="https://github.com/waldyr/Sublime-Installer/blob/master/sublime_text.png?raw=true" alt="Sublime's custom image"/>
 </p>
-
 ### ALGORITHM 1: 
 Define a hash function $h_C$ which maps each vertex $u$ in $V$ into a color $h_C(u)$ in $[0,C−1]$. To this purpose, we advise you to use the hash function $h_C(u)=((a⋅u+b)mod\:p)mod\:C$
 where $p=8191$ (which is prime), a is a random integer in $[1,p−1]$, and b is a random integer in $[0,p−1]$.
