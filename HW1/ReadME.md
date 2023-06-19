@@ -8,6 +8,8 @@ uncovering the hidden thematic structure in the World Wide Web (connected region
 query plan optimization in databases (triangle counting can be used for estimating the size of some joins). 
 Both algorithms use an integer parameter $C \geq 1$, which is used to partition the data.
 
+![image](https://github.com/Ska-p/Big-Data-Computing/assets/102731992/505492fe-3516-4e62-92b1-510b7093d2a7)
+
 ### ALGORITHM 1: 
 Define a hash function $h_C$ which maps each vertex $u$ in $V$ into a color $h_C(u)$ in $[0,C−1]$. To this purpose, we advise you to use the hash function $h_C(u)=((a⋅u+b)mod\:p)mod\:C$
 where $p=8191$ (which is prime), a is a random integer in $[1,p−1]$, and b is a random integer in $[0,p−1]$.
@@ -25,3 +27,8 @@ Develop an implementation of this algorithm as a method/function *MR_ApproxTCwit
 Compute the number $t(i)$ of triangles formed by edges of $E(i)$, separately for each $0 \leq i < C$.
 
 + Round 2: Compute and return  $tfinal = C^2 \sum_{0 \leq i < C} t(i)$ as final estimate of the number of triangles in $G$.
+
+#### DATA FORMAT. 
+To implement the algorithms assume that the vertices (set $V$) are represented as 32-bit integers (i.e., type Integer in Java), and that the graph $G$ is given in input as the set of edges $E$
+stored in a file. Each row of the file contains one edge stored as two integers (the edge's endpoints) separated by comma (','). Each edge of $E$ appears exactly once in the file and $E$
+does not contain multiple copies of the same edge.
