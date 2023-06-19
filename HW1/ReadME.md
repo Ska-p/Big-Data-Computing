@@ -10,7 +10,7 @@ Both algorithms use an integer parameter $C \geq 1$, which is used to partition 
 
 <p align="center">
 ![image](https://github.com/Ska-p/Big-Data-Computing/assets/102731992/505492fe-3516-4e62-92b1-510b7093d2a7)
-<\p>
+</p>
   
 ### ALGORITHM 1: 
 Define a hash function $h_C$ which maps each vertex $u$ in $V$ into a color $h_C(u)$ in $[0,C−1]$. To this purpose, we advise you to use the hash function $h_C(u)=((a⋅u+b)mod\:p)mod\:C$
