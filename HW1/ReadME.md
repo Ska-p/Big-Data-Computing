@@ -10,7 +10,7 @@ query plan optimization in databases (triangle counting can be used for estimati
 Both algorithms use an integer parameter $C \geq 1$, which is used to partition the data.
 
 ### ALGORITHM 1: 
-Define a hash function $h_C$ which maps each vertex u in V into a color $h_C(u)$ in $[0,C−1]$. To this purpose, we advise you to use the hash function $h_C(u)=((a⋅u+b)modp)modC$
+Define a hash function $h_C$ which maps each vertex u in V into a color $h_C(u)$ in $[0,C−1]$. To this purpose, we advise you to use the hash function $h_C(u)=((a⋅u+b)mod\:p)mod\:C$
 where p=8191 (which is prime), a is a random integer in $[1,p−1]$, and b is a random integer in $[0,p−1]$.
 
 + Round 1: Create $C$ subsets of edges, where, for $0 \leq i < C$, the i-th subset, $E(i)$ consist of all edges $(u,v)$ of E such that $h_C(u)=h_C(v)=i$. 
@@ -22,11 +22,7 @@ Compute the number $t(i)$ triangles formed by edges of $E(i)$, separately for ea
 Develop an implementation of this algorithm as a method/function MR_ApproxTCwithNodeColors.
 
 ### ALGORITHM 2:
-Round 1:
-
-Partition the edges at random into $C$ subsets $E(0),E(1),...E(C−1)$. Note that, unlike the previous algorithm, now every edge ends up in some $E(i)$.
++ Round 1: Partition the edges at random into $C$ subsets $E(0),E(1),...E(C−1)$. Note that, unlike the previous algorithm, now every edge ends up in some $E(i)$.
 Compute the number $t(i)$ of triangles formed by edges of $E(i)$, separately for each $0 \leq i < C$.
 
-Round 2: 
-
-Compute and return  $tfinal = C^2 \sum_{0 \leq i < C} t(i)$ as final estimate of the number of triangles in $G$.
++ Round 2: Compute and return  $tfinal = C^2 \sum_{0 \leq i < C} t(i)$ as final estimate of the number of triangles in $G$.
