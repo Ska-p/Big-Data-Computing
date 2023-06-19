@@ -28,5 +28,5 @@ The value $C$ depends on the range you want for the result.
 + The exact frequencies of all distinct items of $\Sigma_R$
 + The true second moment $F2$ of $\Sigma_R$. To avoid large numbers, normalize $F2$ by dividing it by $|\Sigma_R|^2$.
 + The approximate second moment $\tilde{F}2$ of $\Sigma_R$ using count sketch, also normalized by dividing it by $|\Sigma_R|^2$.
-+ The average relative error of the frequency estimates provided by the count sketch where the average is computed over the items of $u \in $\Sigma_R$ whose true frequency is $f_u \geq \phi(K)$, where $\phi(K)$ is the K-th
++ The average relative error of the frequency estimates provided by the count sketch where the average is computed over the items of $u \in \Sigma_R$ whose true frequency is $f_u \geq \phi(K)$, where $\phi(K)$ is the K-th
 largest frequency of the items of $\Sigma_R$ Recall that if $\tilde{f}_u$ is the estimated frequency for $u$, the relative error of is $\frac{|f_u−\tilde{f}_u|}{f_u}$.
