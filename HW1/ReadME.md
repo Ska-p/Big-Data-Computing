@@ -31,6 +31,8 @@ Compute the number $t(i)$ of triangles formed by edges of $E(i)$, separately for
 
 + Round 2: Compute and return  $tfinal = C^2 \sum_{0 \leq i < C} t(i)$ as final estimate of the number of triangles in $G$.
 
+In the homework you must develop an implementation of this algorithm as a method/function *MR_ApproxTCwithSparkPartitions* that, in Round 1, uses the partitions provided by Spark, which you can access through method mapPartitions.
+
 #### DATA FORMAT. 
 To implement the algorithms assume that the vertices (set $V$) are represented as 32-bit integers (i.e., type Integer in Java), and that the graph $G$ is given in input as the set of edges $E$
 stored in a file. Each row of the file contains one edge stored as two integers (the edge's endpoints) separated by comma (','). Each edge of $E$ appears exactly once in the file and $E$
