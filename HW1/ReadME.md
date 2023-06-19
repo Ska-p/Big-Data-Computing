@@ -7,10 +7,13 @@ It has also been used is different other scenarios, for instance: detecting web 
 uncovering the hidden thematic structure in the World Wide Web (connected regions of the web which are dense in triangles represents a common topic), 
 query plan optimization in databases (triangle counting can be used for estimating the size of some joins). 
 Both algorithms use an integer parameter $C \geq 1$, which is used to partition the data.
+
 <p align="center">
-  <img src="https://github.com/waldyr/Sublime-Installer/blob/master/sublime_text.png?raw=true" alt="Sublime's custom image"/>
+  <img src=https://github.com/Ska-p/Big-Data-Computing/assets/102731992/9bde1e4a-7210-455b-8ab9-8538fd45fc15 />
 </p>
-### ALGORITHM 1: 
+
+
+## ALGORITHM 1: 
 Define a hash function $h_C$ which maps each vertex $u$ in $V$ into a color $h_C(u)$ in $[0,C−1]$. To this purpose, we advise you to use the hash function $h_C(u)=((a⋅u+b)mod\:p)mod\:C$
 where $p=8191$ (which is prime), a is a random integer in $[1,p−1]$, and b is a random integer in $[0,p−1]$.
 
@@ -22,7 +25,7 @@ Compute the number $t(i)$ triangles formed by edges of $E(i)$, separately for ea
 
 Develop an implementation of this algorithm as a method/function *MR_ApproxTCwithNodeColors*.
 
-### ALGORITHM 2:
+## ALGORITHM 2:
 + Round 1: Partition the edges at random into $C$ subsets $E(0),E(1),...E(C−1)$. Note that, unlike the previous algorithm, now every edge ends up in some $E(i)$.
 Compute the number $t(i)$ of triangles formed by edges of $E(i)$, separately for each $0 \leq i < C$.
 
