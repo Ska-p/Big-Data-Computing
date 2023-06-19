@@ -1,4 +1,4 @@
-#  Big Data Computing: Homeowork 2
+#  Big Data Computing: Homework 2
 In this homework, you will run a Spark program on the CloudVeneto cluster. As for Homework 1, the objective is to estimate (approximately or exactly) the number of triangles in an undirected graph G=(V,E). 
 More specifically, your program must implement two algorithms:
 
