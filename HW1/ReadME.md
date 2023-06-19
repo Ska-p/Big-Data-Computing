@@ -14,17 +14,23 @@ Define a hash function $h_C$ which maps each vertex u in V into a color $h_C(u)$
 where p=8191 (which is prime), a is a random integer in $[1,p−1]$, and b is a random integer in $[0,p−1]$.
 
 Round 1:
+
 Create $C$ subsets of edges, where, for $0 \leq i < C$, the i-th subset, $E(i)$ consist of all edges $(u,v)$ of E such that $h_C(u)=h_C(v)=i$. 
 Note that if the two endpoints of an edge have different colors, the edge does not belong to any $E(i)$ and will be ignored by the algorithm.
 Compute the number $t(i)$ triangles formed by edges of $E(i)$, separately for each $0 \leq i < C$. 
+
 Round 2: 
+
 Compute and return $tfinal = C^2 \sum_{0 \leq i < C} t(i)$ as final estimate of the number of triangles in $G$.
 
 Develop an implementation of this algorithm as a method/function MR_ApproxTCwithNodeColors.
 
 ### ALGORITHM 2:
 Round 1:
+
 Partition the edges at random into $C$ subsets $E(0),E(1),...E(C−1)$. Note that, unlike the previous algorithm, now every edge ends up in some $E(i)$.
 Compute the number $t(i)$ of triangles formed by edges of $E(i)$, separately for each $0 \leq i < C$.
+
 Round 2: 
+
 Compute and return  $tfinal = C^2 \sum_{0 \leq i < C} t(i)$ as final estimate of the number of triangles in $G$.
