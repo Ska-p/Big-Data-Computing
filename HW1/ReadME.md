@@ -9,7 +9,7 @@ query plan optimization in databases (triangle counting can be used for estimati
 Both algorithms use an integer parameter $C \geq 1$, which is used to partition the data.
 
 <p align="center">
-  <img width="460" height="300" src="https://www.dougissi.com/counting-polygons/assets/output_4_1.png">
+  <img width="460" height="300" src="![image](https://github.com/Ska-p/Big-Data-Computing/assets/102731992/81195ca2-c5da-441e-88b1-ef4491f5da50)">
 </p>
 
 ### ALGORITHM 1: 
