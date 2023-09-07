@@ -3,7 +3,6 @@ In this homework, you will use the Spark Streaming API to devise a program which
 to estimate the individual frequencies of the items and the second moment F2.
 
 ## Spark streaming settings used
-For the homework, we created a server which generates a continuous stream of integer items. The server has been already activated on the machine algo.dei.unipd.it and emits the items as strings on port 8888. 
 Your program will define a Spark Streaming context that accesses the stream through the method socketTextStream which transforms the input stream (coming from the specified machine and port number) 
 into DStream (Discretized Stream) of batches of items arrived during a time interval whose duration is specified at the creation of the context. 
 A method foreachRDD is then invoked to process the batches one after the other. Each batch is seen as an RDD and a set of RDD methods are available to process it. 
